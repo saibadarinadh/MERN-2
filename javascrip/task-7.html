@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>task-7</title>
+    <style>
+        #image {
+            position: absolute;
+            top: 50px;
+            left: 200px;
+        }
+    </style>
+</head>
+
+<body>
+    <img src="https://img.freepik.com/premium-vector/steam-locomotive-cartoon-clipart-illustration_576561-1290.jpg"
+        id="image" style="width: 300px;">
+    <div id="but" style="margin-top: 375px;">
+        <center>
+            <h1 style="color:indigo;">Click the following buttons to handle animation</h1>
+
+            <button id="start">Start</button>
+            <button id="stop">Stop</button>
+
+        </center>
+
+    </div>
+
+    <script>
+        var image = document.getElementById("image");
+        var startButton = document.getElementById("start");
+        var stopButton = document.getElementById("stop");
+
+        startButton.addEventListener("click", function () {
+            image.style.left = "200px";
+            var interval = setInterval(function () {
+                image.style.left = parseInt(image.style.left) + 1 + "px";
+            }, 10);
+
+            stopButton.addEventListener("click", function () {
+                clearInterval(interval);
+            });
+        });
+    </script>
+</body>
+
+</html>
