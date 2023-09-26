@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task-2</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <style>
+    body {
+      background: f1fbff;
+    }
+
+    .section-padding {
+      padding: 100px 0;
+    }
+
+    .carousel-item {
+      height: 100vh;
+      min-height: 300px;
+    }
+
+    .carousel-caption {
+      bottom: 220px;
+      z-index: 2;
+    }
+
+    .carousel-caption h1 {
+      font-size: 45px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      margin-top: 25px;
+    }
+
+    .carousel-inner::before {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      background: rgba(0, 0, 0, 0.3);
+      z-index: 1;
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="navbar " style="background-color: #ffbc34; padding-bottom: 0%;">
+    <div class="row ps-5 w-100">
+      <div class="col-2 text-center pb-2">
+        <h1><b>Builderz</b> </h1>
+      </div>
+      <div class="col-2"></div>
+      <div class="col-8">
+        <div class="row">
+          <div class="col-1 text-end g-3"><i class="fa-solid fa-business-time fa-2xl"></i></div>
+          <div class="col-3 "> Opening Hour <br>Mon-Fri 8:00-9:00</div>
+          <div class="col-1 text-end g-3"><i class="fa-solid fa-phone fa-2xl"></i></div>
+          <div class="col-3 "> Call Us <br>+012 345 6789</div>
+          <div class="col-1 text-end g-3"><i class="fa-regular fa-envelope fa-2xl"></i></div>
+          <div class="col-3 ">Email Us <br>info@example.com</div>
+        </div>
+      </div>
+
+    </div>
+    <div class="container-fluid ">
+      <nav class="navbar navbar-expand-lg ms-5 me-5 " style="background-color: #030f27; width: 1500px;">
+        <div class="container-fluid">
+
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" href="#" style="color: white;" onmouseover="this.style.color='#ffbc34'"
+                  onmouseout="this.style.color='white'">HOME</a>
+
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#" style="color: white;" onmouseover="this.style.color='#ffbc34'"
+                  onmouseout="this.style.color='white'">ABOUT</a>
+
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#" style="color: white;" onmouseover="this.style.color='#ffbc34'"
+                  onmouseout="this.style.color='white'">SERVICE</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#" style="color: white;" onmouseover="this.style.color='#ffbc34'"
+                  onmouseout="this.style.color='white'">TEAM</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#" style="color: white;" onmouseover="this.style.color='#ffbc34'"
+                  onmouseout="this.style.color='white'">PROJECT</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                   style="color: white;" onmouseover="this.style.color='#ffbc34'"
+                  onmouseout="this.style.color='white'">
+                  PAGES
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#" style="color: white;" onmouseover="this.style.color='yellow'"
+                  onmouseout="this.style.color='white'">CONTACT</a>
+              </li>
+            </ul>
+            <div class="justify-content-end">
+              <a href="#" class="nav-link ">
+                <button type="button " class="btn btn-outline-light justify-content-end">Get A
+                  Quote</button>
+              </a>
+
+            </div>
+          </div>
+        </div>
+      </nav>
+
+    </div>
+
+
+
+
+  </nav>
+  <main>
+    <div id="carouselExampleCaptions " class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+          aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+          aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="./img_1.jpg" class="d-block w-100 h-100" alt="...">
+          <div class="carousel-caption  " style="padding-top: 1000;;">
+            <h3>We are Professional</h3>
+            <h1><b> Your Dream Project</b></h1>
+            <br>
+            <p> <a href="#" class="btn btn-outline-light">GET A QUOTE</a></p>
+
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="./ima_2.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Second slide label</h5>
+            <p>Some representative placeholder content for the second slide.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="./img_3.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Third slide label</h5>
+            <p>Some representative placeholder content for the third slide.</p>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="row ">
+
+      <div class="col-1  pt-5" style="background-color:#030f27;color: white;"><img src="./task-2_1.png" alt=""
+          style="width: 100%;"></div>
+      <div class="col-3 pt-5 " style="background-color:#030f27;color: #ffbc34;">
+        <h3>Expert Worker</h3>
+        <p>Lorem ipsum dolor sit amet <br> elit. Phasus nec pretim <br> ornare velit non</p>
+      </div>
+      <div class="col-1 text-center pt-5" style="background-color: #ffbc34;"><img src="./task-2_2.png" alt=""
+          style="width: 100%;"></div>
+      <div class="col-3 pt-5" style="background-color: #ffbc34; color: #030f27;">
+        <h3>Quality Work</h3>
+        <p>Lorem ipsum dolor sit amet <br> elit. Phasus nec pretim <br> ornare velit non</p>
+      </div>
+      <div class="col-1 text-center pt-5" style="background-color:#030f27;color: white;"><img src="./task-2_3.png"
+          alt="" style="width: 100%;"></div>
+      <div class="col-3 pt-5" style="background-color:#030f27;color: #ffbc34">
+        <h3>24/7 Support</h3>
+        <p>Lorem ipsum dolor sit amet <br> elit. Phasus nec pretim <br> ornare velit non</p>
+      </div>
+    </div>
+  </footer>
+
+
+</body>
+
+</html>
